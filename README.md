@@ -1,2 +1,2 @@
-# jquery_Game
-jquery Homework
+# Word_Guess_Game
+javascript word guesser game
