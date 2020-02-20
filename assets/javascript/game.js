@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function game() {
 
 
@@ -37,7 +35,7 @@ $(document).ready(function game() {
 
     //functions to count wins/losses
     function winLoss() {
-        if (playerScore === randomScore) {
+        if (playerScore == randomScore) {
             gameWin = true
             console.log("gameWin", gameWin)
             $("#randomScore").html("Winner Winner Chicken Dinner")
@@ -59,13 +57,14 @@ $(document).ready(function game() {
     };
 
     win();
-    restart();
+    // restart();
 
     function win() {
-        if (gameWin = true) {
+        if (playerScore == randomScore) {
             wins++ ;
             $("#wins").html("wins: " + wins)
             console.log(wins, "wins")
+            restart()
         } else if (playerScore > randomScore)
             losses++ ;
         $("#losses").html("losses: " + losses)
